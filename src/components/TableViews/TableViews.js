@@ -18,7 +18,8 @@ const TableViews = ({todos,toggledSelect,toggledComplete}) => {
         <tbody>
           {
             todos.map(todo => {
-              return <RowItem todo={todo} 
+              return <RowItem key={todo.id}
+                              todo={todo} 
                               toggledSelect={toggledSelect}
                               toggledComplete={toggledComplete}
               />
@@ -33,7 +34,7 @@ const TableViews = ({todos,toggledSelect,toggledComplete}) => {
   )
 }
 TableViews.proptype = {
-  todo: PropTypes.object.isRequired,
+  todos: PropTypes.object.isRequired,
   toggledSelect: PropTypes.func.isRequired,
   toggledComplete: PropTypes.func.isRequired
 }

@@ -15,8 +15,8 @@ const ListItem = ({todo,toggledSelect,toggledComplete}) => {
 
       <div className="mx-3">
         <h4>{todo.title}</h4>
-        {/* <p>{todo.time.toDateString()}</p> */}
-        <p>{todo.time}</p>
+        <p>{todo.time.toDateString()}</p>
+        {/* <p>{todo.time}</p> */}
       </div>
 
       <Button className="ml-auto" 

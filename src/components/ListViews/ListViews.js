@@ -26,7 +26,7 @@ const ListViews = ({todos,toggledSelect,toggledComplete}) => {
 };
 
 ListViews.proptype = {
-  todo: PropTypes.object.isRequired,
+  todos: PropTypes.object.isRequired,
   toggledSelect: PropTypes.func.isRequired,
   toggledComplete: PropTypes.func.isRequired
 }

@@ -14,8 +14,8 @@ const RowItem = ({todo,toggledSelect,toggledComplete}) => {
         />
       </td>
       <td>
-        {/* <p>{todo.time.toDateString()}</p> */}
-        <p>{todo.time}</p>
+        <p>{todo.time.toDateString()}</p>
+        {/* <p>{todo.time}</p> */}
       </td>
       <td><h4>{todo.title}</h4></td>
       <td>
